@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - DDU Student Union Voting System</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #004aad;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            font-size: 2.5rem;
+            font-weight: bold;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #004aad;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 1rem 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f9c74f;
+        }
+
+        .about-section {
+            background: linear-gradient(45deg, #004aad, #6fb1fc);
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+            background-size: cover;
+            position: relative;
+        }
+
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .about-content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .team-section {
+            padding: 50px 20px;
+            background-color: #f4f4f9;
+            text-align: center;
+        }
+
+        .team-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .team-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .team-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .team-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .team-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .team-card p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .team-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .btn-container {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            color: #fff;
+            background-color: #f9c74f;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn:hover {
+            background-color: #f9844a;
+            transform: translateY(-5px);
+        }
+
+        footer {
+            background-color: #004aad;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem 0;
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 1rem;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .about-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .about-content p {
+                font-size: 1rem;
+            }
+
+            .team-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        About Us - DDU Student Union Voting System
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-content">
+            <h1>About Us</h1>
+            <p>
+                Welcome to the Dire Dawa University Student Union Online Voting System. Our goal is to make the voting process 
+                simple, transparent, and secure for every student. This platform ensures that all students have a fair opportunity 
+                to participate in the democratic process of selecting their student representatives.
+            </p>
+            <p>
+                We believe in the power of student voices and aim to provide a platform that prioritizes accessibility, security, 
+                and convenience.
+            </p>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <h2 class="team-title">Meet Our Team</h2>
+        <div class="team-container">
+            <div class="team-card">
+                <img src="images/mekdi.webp" alt="Team Member 1">
+                <h3>Mekdes Merga</h3>
+                <p>Project Manager</p>
+            </div>
+
+            <div class="team-card">
+                <img src="images/nol.png" alt="Team Member 1">
+                <h3>Nolawit Solomon</h3>
+                <p>Project Manager</p>
+            </div>
+
+            <div class="team-card">
+                <img src="images/boss.jpg" alt="Team Member 2">
+                <h3>Biruk Aemero</h3>
+                <p>Lead Developer</p>
+            </div>
+
+            <div class="team-card">
+                <img src="images/mer.png" alt="Team Member 3">
+                <h3>Mihret Habtamu</h3>
+                <p>UI/UX Designer</p>
+            </div>
+
+            <div class="team-card">
+                <img src="images/edu.webp" alt="Team Member 4">
+                <h3>Eden Enbakom</h3>
+                <p>Quality Assurance</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Dire Dawa University Student Union</p>
+    </footer>
+
+</body>
+</html>
